@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         autoCompleteTextView = (AutoCompleteTextView)findViewById(R.id.occ);
         final Spinner myspinner = (Spinner)findViewById(R.id.spinner);
 
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.countries));
+        final ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.countries));
 
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         myspinner.setAdapter(myAdapter);
@@ -64,6 +64,17 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("OCC_KEY",occupation);
                 startActivity(intent);
 
+            }
+        });
+
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                firstname.setText("");
+                lastname.setText("");
+                autoCompleteTextView.setText("");
+                radioGroup.clearCheck();
+                myspinner.setAdapter(myAdapter);
             }
         });
 
@@ -94,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.female:
                 if(checked)
                     gen="Female";
+                break;
         }
 
     }
