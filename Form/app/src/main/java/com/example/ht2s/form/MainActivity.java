@@ -85,8 +85,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void checkButton(View view)
     {
-        int radioId = radioGroup.getCheckedRadioButtonId();
-        radioButton = findViewById(radioId);
-        gen = radioButton.getText().toString();
+        boolean checked=((RadioButton)view).isChecked();
+        switch(view.getId()){
+            case  R.id.male:
+                if (checked)
+                    gen="Male";
+                break;
+            case R.id.female:
+                if(checked)
+                    gen="Female";
+        }
+
     }
 }
