@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1032378084380",
+    "firebase_url": "https://facebooklogin-fd2d5.firebaseio.com",
+    "project_id": "facebooklogin-fd2d5",
+    "storage_bucket": "facebooklogin-fd2d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032378084380:android:8c73da00e4cf1e64",
+        "android_client_info": {
+          "package_name": "com.example.ht2s.facebooklogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032378084380-a8604hoo8qh5o651jkvrfd18hs0d0o8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVua7EglARgJJzKkvg1XtGXOF4yZQtyt0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
